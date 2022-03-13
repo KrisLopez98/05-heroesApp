@@ -1,0 +1,26 @@
+<h2>¿Desea eliminar héroe?</h2>
+<mat-divider></mat-divider>
+<hr>
+<h3>
+    Esta a punto de eliminar a {{data.superhero}}
+</h3>
+<p>
+    ¿Desea continuar?
+</p>
+<div fxLayout="row"
+     fxLayoutGap="10px">
+    <button mat-button
+            mat-flat-button
+            fxFlex="50"
+            (click)="borrar()"
+            color="warn">
+        Continuar
+    </button>
+    <button mat-button
+            mat-flat-button
+            fxFlex="50"
+            (click)="cerrar()"
+            color="primary">
+        Cancelar
+    </button>
+</div>
